@@ -1,0 +1,45 @@
+<?php include('config.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx Real-Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bea53ffddf.js" crossorigin="anonymous"></script>
+</head>
+<body class="index">
+    <header id="header2">
+        <img src="images/ONYX-removebg-preview.png" class="logo" alt="Onyx Real-Estate Logo">
+    </header>
+ 
+    <main class="container">
+        <section class="box form-box">
+            <header>
+                <h2>Login</h2>
+            </header>
+            <form action="" method="post">
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" autocomplete="off" required aria-label="Username">
+                </div>
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required aria-label="Password">
+                </div>
+                <div class="field">
+                    <button type="submit" class="btn" name="Login" value="Login"><a href="homepage.html">Login</a></button>
+                </div>
+                <div class="links">
+                    Do you have an account? <a href="register.html">Sign Up</a>
+                </div>
+                <div class="video-background">
+                    <video autoplay muted loop id="background-video">
+                        <source src="images/856661-hd_1920_1080_25fps.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

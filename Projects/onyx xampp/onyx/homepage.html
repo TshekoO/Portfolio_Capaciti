@@ -1,0 +1,336 @@
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
+    $_SESSION['msg'] = "You must log in first";
+    header('location:index.php');
+}
+if(isset($_GET['logout'])){
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location:index.php");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="style.css">
+        <title>
+            Home
+        </title>
+        
+        <script src="https://kit.fontawesome.com/bea53ffddf.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="home">
+        <div id="header">
+            <div class="container2">
+             
+            <nav>
+                <img src="images/ONYX-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"><font style="color: black">Home</font></a></li>
+                    <li><a href="#about"><font style="color: black">About</font></a></li>
+                    <li><a href="#services"><font style="color: black">Services</font></a></li>
+                    <li><a href="#homes"><font style="color: black">Houses</font></a></li>
+                    <li><a href="#survey"><font style="color: black">Survey</font></a></li>
+                    <li><a href="#contact"><font style="color: black">Contact</font></a></li>
+            
+          
+                
+                     
+                 <a href="index.html" style="color:black"><button class="btn2"> logout</button></a>
+                
+                
+        </ul>
+        </nav>
+        <div class="header-text">
+            <span>Welcome To Onyx</span>
+            <h1>Unlock the door towards your journey of a perfect home.</h1>
+            
+            </div>
+            </div>
+              
+                
+            
+            </div>
+        </div>
+     <!-----------about------------ -->
+     <div id="about">
+        <h1 class="sub-title" style="color:#fdeed8;"><center>What should you Know About Us</center></h1>
+     </br>
+    </br>
+        <div class="row">
+        <div class="parent">
+            
+              
+        <img class="image1"src="images/image1.jpg"class="image1">
+       <img class="image2" src="images/image2.jpg" class="image2">
+       <img class="image3" src="images/real2.jpg" class="image3">
+        </div>
+       
+        <div class="about-text" >
+       
+        <h3 style="font-family:BD Supper" ><center>Passion & Purpose</center></h3>
+         <p style="color: black;font-family: Georgia, 'Times New Roman', Times, serif;"><center>The company is a way to help people in the middle and lower class to create general wealth. The aim is to buy houses from
+             locations that are a bit old such as houses from rural areas or even small towns.The number of houses that need to be renovated are endless.Rather than gentrifying the place buy selling to the wealthy we would offer our own loans in order to offer more affordable payments 
+            to the people in that community.Not people who want to turn these house into investment properties.To lower the costs on the companys behalf we'd offer to buy houses to meet half way that way everyone is just moving into a new house.</center></p>
+        
+     </div>
+     </div>
+     </div>
+    </div>
+     </div>
+    </br>    
+</br>    
+</br>    
+</br>    
+          <!-- --------------services--------------- -->
+          <div id="services">
+            <div class ="container2">
+                <h1 class="sub-title" style="color: #fdeed8;"><center>How Can We Help</center></h1> 
+                <div class="services-list">
+            
+                    <div>
+                        <i class="fa-solid fa-users"></i>
+                        <h2>Vision</h2>
+                        <p style="color:#fdeed8">Our vision involves creating opportunities and removing barriers to property ownership.</p>
+                      
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-handshake"></i>
+                        <h2>Purpose</h2>
+                        <p style="color: #fdeed8">Purpose is to promote equality,community development and individual well-being.</p>
+                      
+                    </div>
+                    <div>    
+                        <i class="fa-solid fa-landmark-flag"></i>
+    
+                        <h2>Mission</h2>
+                        <p style="color: #fdeed8">Mission is to create a more inclusive and equatable landscape, providing opportunities for financial growth and stability.</p>
+                       
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </br>
+</br>
+</br>
+</br>
+</br>
+      <!-- ----------homes------------ --> 
+      <div id="homes">
+        <div class ="container2">
+            <h1 class="sub-title" style="color: #fdeed8"><center>Which House To Pick</center></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/house1.jpg">
+                    <div class="layer">
+                        <h1 style="color:#fff;">Flipped House</h1>
+                        <i class="fa-solid fa-paint-roller"></i>
+                        
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/land.jpg">
+                <div class="layer">
+                    <h1 style="color: #fff">Dream Home</h1>
+                   
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src ="images/house3.jpg">
+                <div class="layer">
+                    <h1 style="color: #fff">Unsavable House for land</h1>
+                    <i class="fa-solid fa-key"></i>
+                
+                </div>
+            </div>
+            
+            <div class="work.1">
+            
+               
+                  
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Flipped Houses are that needs Renovation. We will able to help you select a house that suits you or your families preference
+                    and afterwards Renovate the house suited to your expectation.</p>
+                    
+                </div>
+        
+        <div class="work.1">
+        
+         
+               
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Dream Homes, where we buy land and build houses that you and your family always wanted.  </p>
+            
+            </div>
+        
+        <div class="work.1">
+
+         
+                
+                <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Unsavable houses for land is when we demolish the house that has been abandoned not only that but one that cant be renovated in any way. This will allow you to purchase the land and start building your home.</p>
+            
+            </div>
+        
+            </div>
+      </div>
+      </div>
+
+    </br>
+</br>
+</br>
+      <!-- ------------survey----------- -->
+      <div id="survey">
+        <div class="container2">
+            <h1 class="sub-title" style="color: #fdeed8"><center>Survey</center></h1>
+          
+        </br>
+
+                     <form action="" method="post">
+                        <label for="username">What type of house are you interested in?</label>
+                       <div class="field input">
+                       
+                        <input type="text" name="survey" id="survey" >
+    
+                       </div>
+                    </br>
+                    <label for="survey2">Preferred location or neighborhood?</label>
+                       <div class="field input">
+                      
+                        <input type="text" name="survey2" id="survey2" >
+    
+                       </div>
+                    </br>
+                       <label for="survey3">What is your budget range for purchasing,building or renovating your house?</label>
+                       <div class="field input">
+                      
+                        <input type="text" name="survey3" id="survey3" >
+    
+                       </div>
+                    </br>
+                       <label for="survey4">When do you plan to purchase?</label>
+                       <div class="field input">
+                      
+                        <input type="text" name="survey4" id="survey4" >
+    
+                       </div>
+                    </br>
+                       <label for="survey5">When do you expect staying at your new home?</label>
+                       <div class="field input">
+                      
+                        <input type="text" name="survey5" id="survey5" >
+    
+                       </div>
+                    </br>
+                       <label for="survey6">Are going to stay alone or with family members?</label>
+                       <div class="field input">
+                      
+                        <input type="text" name="survey6" id="survey6" >
+    
+                       </div>
+                    </br>
+                       <label for="survey7">How would you prefer to communicate with us?(e.g, email,phone,in-person meetings)</label>
+                       <div class="field input">
+                      
+                        <input type="text" name="survey7" id="survey7" >
+    
+                       </div>
+                    
+          </form>
+          <div class="field">
+                   
+            <input type="submit" class="btn" name="username" value="Submit" required>
+           </div>
+        </br>
+    </br>
+        <center>
+            <div class="text">Please rate us on the information you have recceived</div>
+          <div class="container3">
+          
+          <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star" ></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star" ></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star" ></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star" ></label>
+            <form >
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="30"></textarea>
+                    
+                </div>
+            </form>
+          </div>
+          </div>
+          
+          </center>
+        </div>
+      </div>
+      
+      </div>
+    </br>
+    </br>
+    </br>
+</br>
+</br>
+      <!---------contact------ -->
+      <div id="contact">
+    <footer class="footer">
+            <h1 class="sub-title" style="color: #fdeed8"><center>For More Information...</center></h1>
+            <div class="contact-list">
+               
+                    <div class="logo">
+                        <a href="#"><img src="images/ONYX-removebg-preview.png" class="logo2"></a>
+                
+                    <p>Open the door to your perfect home.</p>
+                    
+            
+                    
+                           
+                        
+                    </div>
+            
+                <div class="list">
+                    <p><h2>Our Offices</h2><span><i class="fa-solid fa-location-dot"></i></span></p>
+                                                               
+                    <li>
+                        Pretoria
+                    </li>
+                    <li>
+                        Potchefstroom
+                    </li>
+                    <li>
+                         Hartwater
+                    </li>
+                    </ul>
+                </div>
+                <div >
+                    <h2>Contact Us</h2>
+                    <ul class="footer_links">
+                        <li>
+                          
+                                <span><i class="fa-solid fa-phone"></i></span> +27 81 407 3102
+                          
+                        </li>
+                        <li>
+                            
+                                <span><i class="fa-solid fa-envelope"></i></span> tsheko@gmail
+                          
+                        </li>
+                    </ul>
+                </div>
+            
+        </div>
+            </div>
+        </footer>
+      </div>
+    </body>
+</html>

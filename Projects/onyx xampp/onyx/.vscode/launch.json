@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.php",
+            "file": "C:\\xampp\\htdocs\\onyx"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open register.php",
+            "file": "C:\\xampp\\htdocs\\onyx\\register.php"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open homepage.php",
+            "file": "C:\\xampp\\htdocs\\onyx\\homepage.php"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open edit.php",
+            "file": "C:\\xampp\\htdocs\\onyx\\edit.php"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open edit.php",
+            "file": "C:\\xampp\\htdocs\\onyx\\logout.php"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open edit.php",
+            "file": "C:\\xampp\\htdocs\\onyx\\config.php"
+        },
+
+       
+    ]
+}
